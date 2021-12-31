@@ -1,5 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
+import './Profile.css';
 
 const Profile = (props) => {
   return (
@@ -9,10 +10,10 @@ const Profile = (props) => {
           <div className="colz">
             <div className="colz-icon">
               <a href="https://github.com/ubardev" target="_blank">
-                <i className="fa fa-github"></i>
+                <i className="fa fa-github" />
               </a>
               <a href="https://blog.ubar.kr" target="_blank">
-                <i className="fa fa-rss"></i>
+                <i className="fa fa-rss" />
               </a>
             </div>
           </div>
@@ -47,7 +48,7 @@ const Profile = (props) => {
               </span>
             </span>
           </div>
-          <div className="profile-optins">
+          <div className="profile-options">
             <button className="btn primary-btn"> Contact Me </button>
             <a href="#" download="Hwang22.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
