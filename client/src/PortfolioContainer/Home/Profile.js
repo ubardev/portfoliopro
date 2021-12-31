@@ -7,12 +7,14 @@ const Profile = (props) => {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
-            <a href="https://github.com/ubardev" target="_blank">
-              <i className="fa fa-github"></i>
-            </a>
-            <a href="https://blog.ubar.kr" target="_blank">
-              <i className="fa fa-rss"></i>
-            </a>
+            <div className="colz-icon">
+              <a href="https://github.com/ubardev" target="_blank">
+                <i className="fa fa-github"></i>
+              </a>
+              <a href="https://blog.ubar.kr" target="_blank">
+                <i className="fa fa-rss"></i>
+              </a>
+            </div>
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
@@ -51,6 +53,9 @@ const Profile = (props) => {
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
