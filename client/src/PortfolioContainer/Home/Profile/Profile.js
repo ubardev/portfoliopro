@@ -15,6 +15,9 @@ const Profile = (props) => {
               <a href="https://blog.ubar.kr" target="_blank">
                 <i className="fa fa-rss" />
               </a>
+              <a href="https://www.linkedin.com/in/jong-in-hwang-876619157/" target="_blank">
+                <i className="fa fa-linkedin" />
+              </a>
             </div>
           </div>
           <div className="profile-details-name">
