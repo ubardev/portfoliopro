@@ -39,10 +39,6 @@ const Profile = (props) => {
                     1000,
                     'Team leader 👑',
                     1000,
-                    'JavaScript, React, Augular.js 😎',
-                    1000,
-                    'Java, Spring boot, Node.js, PHP 🧐',
-                    1000,
                   ]}
                 />
               </h1>
