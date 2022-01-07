@@ -9,13 +9,17 @@ const Profile = (props) => {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="https://github.com/ubardev" target="_blank">
+              <a href="https://github.com/ubardev" target="_blank" rel="noreferrer">
                 <i className="fa fa-github" />
               </a>
-              <a href="https://blog.ubar.kr" target="_blank">
+              <a href="https://blog.ubar.kr" target="_blank" rel="noreferrer">
                 <i className="fa fa-rss" />
               </a>
-              <a href="https://www.linkedin.com/in/jong-in-hwang-876619157/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/jong-in-hwang-876619157/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa fa-linkedin" />
               </a>
             </div>
