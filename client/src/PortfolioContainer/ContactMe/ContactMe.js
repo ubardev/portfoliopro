@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import Typical from "react-typical";
-import axios from "axios";
-import { toast } from "react-toastify";
+import React, { useState } from 'react';
+import Typical from 'react-typical';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
-import imgBack from "../../../src/images/mailz.jpeg";
-import load1 from "../../../src/images/load2.gif";
-import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
-import Footer from "../../PortfolioContainer/footer/Footer";
-import "./ContactMe.css";
+import imgBack from '../../../src/images/mailz.jpeg';
+import load1 from '../../../src/images/load2.gif';
+import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
+import ScrollService from '../../utilities/ScrollService';
+import Animations from '../../utilities/Animations';
+import Footer from '../Footer/Footer';
+
+import './ContactMe.css';
 
 export default function ContactMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -17,13 +18,12 @@ export default function ContactMe(props) {
     Animations.animations.fadeInScreen(props.id);
   };
 
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [banner, setBanner] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [banner, setBanner] = useState('');
   const [bool, setBool] = useState(false);
 
   const handleName = (e) => {
@@ -55,9 +55,9 @@ export default function ContactMe(props) {
         toast.success(res.data.msg);
         setBool(false);
 
-        setName("");
-        setEmail("");
-        setMessage("");
+        setName('');
+        setEmail('');
+        setMessage('');
       }
     } catch (error) {
       console.log(error);
@@ -65,27 +65,25 @@ export default function ContactMe(props) {
   };
 
   return (
-    <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
+    <div className="main-container fade-in" id={props.id || ''}>
+      <ScreenHeading subHeading={'Lets Keep In Touch'} title={'Contact Me'} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
-          </h2>{" "}
-          <a href="https://web.facebook.com/?_rdc=1&_rdr">
-            <i className="fa fa-facebook-square" />
+            <Typical loop={Infinity} steps={['Get In Touch 📧', 1000]} />
+          </h2>{' '}
+          <a href="https://github.com/ubardev" target="_blank" rel="noreferrer">
+            <i className="fa fa-github" />
           </a>
-          <a href="#">
-            <i className="fa fa-google-plus-square" />
+          <a href="https://blog.ubar.kr" target="_blank" rel="noreferrer">
+            <i className="fa fa-rss" />
           </a>
-          <a href="https://www.instagram.com/instructor_ehizeex/">
-            <i className="fa fa-instagram" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
-            <i className="fa fa-youtube-square" />
-          </a>
-          <a href="https://twitter.com/Ehiedu_baba">
-            <i className="fa fa-twitter" />
+          <a
+            href="https://www.linkedin.com/in/jong-in-hwang-876619157/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa fa-linkedin" />
           </a>
         </div>
         <div className="back-form">
@@ -113,7 +111,7 @@ export default function ContactMe(props) {
                     <img src={load1} alt="image not responding" />
                   </b>
                 ) : (
-                  ""
+                  ''
                 )}
               </button>
             </div>
