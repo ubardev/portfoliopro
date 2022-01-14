@@ -60,6 +60,10 @@ const Profile = (props) => {
               {' '}
               연락하기{' '}
             </button>
+            {/*<a className="btn primary-btn" href="mailto:bellin83@gmail.com">*/}
+            {/*  {' '}*/}
+            {/*  연락하기{' '}*/}
+            {/*</a>*/}
             <a href="#" download="Hwang22.pdf">
               <button className="btn highlighted-btn">이력서</button>
             </a>
