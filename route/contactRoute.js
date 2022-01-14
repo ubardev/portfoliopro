@@ -15,24 +15,23 @@ router.post("/contact", (req, res) => {
     service: "Gmail",
     port: 465,
     auth: {
-      user: "test@gmail.com",
-      pass: "test",
+      user: process.env.EMAIL_SENDER_EMAIL,
+      pass: process.env.EMAIL_SENDER_PASSWORD,
     },
   });
   let mailOptions = {
     from: data.email,
-    to: "test@gmail.com",
-    subject: `message from ${data.name}`,
+    to: process.env.EMAIL_RECIPIENT_EMAIL,
+    subject: `포트폴리오 보고 연락드립니다. ${data.name}`,
     html: `
-
-            <h3>Informations<h3/>
-            <ul>
-            <li>Name: ${data.name}<li/>
-            <li>Email: ${data.email}<li/>
-            </ul>
-            <h3>Message</h3>
-            <p>${data.message}<p/>
-            `,
+      <h3>발신자 정보<h3/>
+      <ul>
+        <li>Name: ${data.name}<li/>
+        <li>Email: ${data.email}<li/>
+      </ul>
+      <h3>Message</h3>
+      <p>${data.message}<p/>
+    `,
   };
 
   smtpTransporter.sendMail(mailOptions, (error) => {
