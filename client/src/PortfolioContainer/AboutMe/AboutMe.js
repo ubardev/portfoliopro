@@ -13,7 +13,7 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      '11년차 개발자 입니다. SI로 개발을 시작했고 서버, 백엔드 개발을 경험했습니다. 현재는 프론트엔드 팀 리더로써 Angular.js와 React를 주력으로 개발하고 있습니다.',
+      '올해 11년차 개발자 입니다.\nSI로 개발을 시작해서 서버, 백엔드 개발을 경험했습니다.\n현재는 토스랩(JANDI) 프론트엔드 팀 리더로써 팀 리딩과 Angular.js와 React를 주력으로 개발하고 있습니다.',
     highlights: {
       bullets: [
         '20.04 ~ 현재 : 토스랩(JANDI) Frontend 개발 팀 리더(Angular.js, React)',

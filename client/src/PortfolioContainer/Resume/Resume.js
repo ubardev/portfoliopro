@@ -157,9 +157,12 @@ const Resume = (props) => {
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
-      <ResumeHeading heading="IT" description="전자 제품을 좋아합니다." />
+      <ResumeHeading
+        heading="IT"
+        description="전자 기기를 좋아합니다. 신제품 리뷰를 즐겨보며 많이 구매도 합니다."
+      />
       <ResumeHeading heading="Car" description="자동차를 좋아합니다." />
-      <ResumeHeading heading="운동" description="꾸준히 운동하고 있습니다." />
+      <ResumeHeading heading="재테크" description="돈을 잘 모으고 잘 쓰는데 관심이 많습니다." />
     </div>,
   ];
 
